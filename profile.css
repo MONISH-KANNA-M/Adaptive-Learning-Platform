@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: darkblue;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: orange;
+}
+
+.navbar .login-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e57e00;
+}
+
+.navbar .search-form input {
+    border-radius: 20px;
+}
+
+.navbar .custom-toggler {
+    border-color: #fff;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+}
+
+.custom-file-upload {
+    display: none; /* Hides the actual file input */
+}
+
+.custom-file-upload-label {
+    border: 1px solid #007bff;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.achievement-card, .skill-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card i, .skill-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    position: relative;
+    height: 200px;
+}
+
+footer {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        margin-right: 0.5rem;
+    }
+
+    .profile-card img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Chatbot Icon Styles */
+.chatbot-icon {
+    position: fixed; /* Fixes the icon to the bottom-right of the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    width: 60px;  /* Set the width of the icon */
+    height: 60px; /* Set the height of the icon */
+    background-color: #0056b3; /* Button color */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Makes the icon a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.chatbot-icon:hover {
+    background-color: orange; /* Changes background color on hover */
+}
+/* Ensures the image inside the circle is correctly sized and positioned */
+.chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensures the image is also a circle */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
