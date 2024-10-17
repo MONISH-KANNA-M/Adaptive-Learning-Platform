@@ -1,0 +1,147 @@
+.course-grid {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.course-card {
+    flex: 0 0 20%;
+    margin-right: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px; /* Fixed height for uniform image sizing */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px; /* Add space between the image and the text */
+}
+
+.course-card h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.course-card .btn-primary {
+    width: 100%; /* Full width button */
+    padding: 10px 0; /* Consistent button sizing */
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6; /* Light Gray */
+    color: #1f2937; /* Dark Gray */
+}
+
+.navbar {
+    background-color: #1e3a8a; /* Dark Blue */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ffffff; /* White */
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+
+.nav-links a {
+    color: #ffffff; /* White */
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links .login-btn {
+    background-color: #f59e0b; /* Amber */
+    color: #ffffff; /* White */
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: #1e3a8a; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: #1f2937;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #f59e0b; /* Amber */
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Gold */
+}
+
+/* Chatbot Icon Styles */
+.chatbot-icon {
+    position: fixed; /* Fixes the icon to the bottom-right of the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    width: 60px;  /* Set the width of the icon */
+    height: 60px; /* Set the height of the icon */
+    background-color: #0056b3; /* Button color */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Makes the icon a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.chatbot-icon:hover {
+    background-color: orange; /* Changes background color on hover */
+}
+/* Ensures the image inside the circle is correctly sized and positioned */
+.chatbot-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensures the image is also a circle */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
